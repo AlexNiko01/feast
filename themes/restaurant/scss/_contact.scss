@@ -1,0 +1,56 @@
+.contact-form {
+  text-transform: capitalize;
+  font-size: 13px;
+  margin-top: 8px;
+  .form-control {
+    border-radius: 0;
+    padding: 13px 12px;
+    height: auto;
+    &::-moz-placeholder {
+      text-transform: capitalize;
+    }
+  }
+  input[type="submit"] {
+    margin-top: 0;
+    width: 100%;
+  }
+  textarea.form-control {
+    height: 200px;
+  }
+  .row + .row {
+    margin-top: 13px;
+  }
+}
+
+.contact-data {
+  padding-bottom: 153px;
+  address {
+    max-width: 160px;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &__title {
+    font-family: 'josefin_sansbold', sans-serif;
+    font-size: 15px;
+    &--sub {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+  &__tel {
+    font-weight: bold;
+  }
+  &__email, &__tel {
+    display: block;
+  }
+}
+
+.fe-contact-text {
+  padding-top: 78px;
+}
+.contact-data span {
+  margin-right: 0;
+}

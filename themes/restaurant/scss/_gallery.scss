@@ -1,0 +1,113 @@
+.fe-pad-top {
+  padding: 74px 0 0
+}
+
+.fe-button-gallery {
+  margin-top: 20px;
+}
+
+.gallery-content {
+  padding-bottom: 90px;
+}
+
+.fe-grid {
+  &:before, &:after {
+    display: table;
+    content: '';
+  }
+  img {
+    padding-bottom: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: block;
+    -webkit-box-shadow: -1px 6px 30px -13px rgba(0, 0, 0, .68);
+    -moz-box-shadow: -1px 6px 30px -13px rgba(0, 0, 0, .68);
+    box-shadow: -1px 6px 30px -13px rgba(0, 0, 0, .68);
+    &--height-50 {
+      padding-bottom: calc(50% - 10px);
+    }
+    &--height-200 {
+      padding-bottom: calc(200% + 20px);
+    }
+  }
+
+}
+
+.grid.effect-4 {
+  perspective: 1300px;
+}
+
+.grid.effect-4 li {
+  transform-style: preserve-3d;
+}
+
+.grid.effect-4 li.animate {
+  transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+  animation: fallPerspective .8s ease-in-out forwards;
+}
+
+@keyframes fallPerspective {
+  100% {
+    transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+.grid-gallery-item {
+  width: 250px;
+  a{
+    display: block;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.grid-item--width2 {
+  width: 510px;
+}
+
+.grid-gallery{
+  list-style: none;
+  &:after{
+    width: 100%;
+    height: 26px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    overflow: hidden;
+    z-index: 999;
+    background-color: rgba(255,255,255,1);
+  }
+  &__caption{
+    position: absolute;
+    top: 30px;
+  }
+}
+.gallery-content{
+  .container{
+    width: 1070px;
+  }
+}
+.restaurant-gallery{
+  display: inline-block;
+  padding: 10px;
+  background-color: transparent;
+  margin-bottom: 17px;
+}
+
+
+body{
+  #swipebox-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'josefin_sanssemibold', sans-serif!important;
+    color: #000;
+    font-size: 30px;
+    height: auto;
+  }
+}

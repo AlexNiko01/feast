@@ -1,0 +1,149 @@
+.book-table {
+  &__img {
+    background-position: left center;
+    background-size: cover;
+    height: 600px;
+  }
+  &__form-wrapper {
+    padding: 113px 10px;
+    max-width: 565px;
+    margin-left: 25%;
+    font-size: 14px;
+    .row + .row {
+      margin-top: 19px;
+    }
+  }
+  &__form {
+    margin-bottom: 18px;
+    border-bottom: solid 1px #F4F4F4;
+    padding-bottom: 20px;
+    label {
+      line-height: $lh;
+    }
+    .fe-button {
+      margin-top: $lh;
+      width: 100%;
+      padding: 14px 10px;
+    }
+    select, input {
+      padding: 15px 10px;
+      width: 100%;
+      background-color: transparent;
+      border-color: #F4F4F4;
+      border-radius: 0;
+      height: auto;
+    }
+    .form-control {
+      box-shadow: none;
+      border: 1px solid #F4F4F4;
+    }
+    .input-group-addon {
+      border: none;
+      border-radius: 0;
+    }
+
+  }
+}
+
+.row .col-no-pad-r {
+  padding-right: 0;
+}
+
+.booking-rez, .booking-confirm-form{
+  select, input{
+    width: 100%;
+    padding: 15px 10px;
+    background-color: transparent;
+    border-color: #F4F4F4;
+    border-radius: 0;
+    height: auto;
+  }
+}
+.fe-change-booking{
+  text-decoration: underline;
+}
+
+.booking-confirm-form-wrapper{
+  display: none;
+}
+.fe-timeslots{
+  padding-bottom:15px;
+  button {
+    margin: 2px;
+    width: 15.8%;
+    min-width: 80px;
+  }
+}
+.reservation_request{
+  height: 100px;
+}
+.booking-confirm-form{
+  .fe-button{
+    margin-top:25px;
+    width: 100%;
+  }
+}
+#date_1{
+  padding: 13.5px 10px;
+}
+.booking-data-list{
+  width: 50%;
+  max-width: 100%;
+  list-style: none;
+  li{
+    span{
+      float: right;
+    }
+  }
+}
+
+.result-message {
+  list-style: none;
+  margin-top: 15px;
+  padding-left: 15px;
+  border-left: 3px solid;
+  b {
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  &.error {
+    color: #ff501f;
+    border-color: #ff501f;
+  }
+  &.success {
+    color: #216734;
+    border-color: #216734;
+  }
+}
+.with-errors{
+  color: #ff501f;
+}
+
+@media all and (max-width: 1600px) {
+
+  .book-table__form-wrapper {
+    padding: 113px 15px 113px 0;
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media all and (max-width: 1230px) {
+
+}
+
+@media all and (max-width: 1024px) {
+
+}
+
+@media all and (max-width: 991px) {
+  .row .col-no-pad-r {
+    padding-right: 15px;
+  }
+
+}
+.page-template-template-booking{
+  .modal-header .close {
+    margin-top: -23px;
+  }
+}
